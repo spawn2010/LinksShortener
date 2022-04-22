@@ -13,6 +13,7 @@ P.s генерацию подглядел в одном видосике, 6 си
 ## Для запуска
 1. Копировать myapp/.env.example -> myapp/.env
 2. docker-compose up composer
-3. docker compose up -d
+3. docker-compose up -d
 4. docker exec -it linksshortener_myapp_1 /bin/sh -> php artisan key:generate -> php artisan migrate
+5. localhost:8000
 
