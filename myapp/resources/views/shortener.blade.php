@@ -43,7 +43,7 @@
                 success: function (response) {
                     document.getElementById("copy").style.display = ''
                     document.querySelector('a').href = response.link
-                    document.querySelector('a').textContent = 'http://our-domain.com/'+response.code
+                    document.querySelector('a').textContent = 'http://localhost:8000/'+response.code
                 },
                 error: function (data) {
                     alert('неподходящая ссылка')
