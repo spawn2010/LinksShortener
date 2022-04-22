@@ -9,3 +9,10 @@
 5. Если есть готовое решение которое тебя устраивает и непротеворечит техническим или моральным соображениям, то считаю что нужно использовать его, по этому слава docker hub, Bitnami образ со свежим PHP и Laravel очень выручил, правда иногда он криво разварачивается и не подтягивает зависимости из composer.json, по этому пришлось прикрутить образ compose и для личного удобства phpmyadmin (надеюсь это не возбраняется)
 
 P.s генерацию подглядел в одном видосике, 6 символов, прикольные стандартные helper-ы :)
+
+## Для запуска
+1. Копировать myapp/.env.example -> myapp/.env
+2. docker-compose up composer
+3. docker compose up -d
+4. docker exec -it linksshortener_myapp_1 /bin/sh -> php artisan key:generate -> php artisan migrate
+
