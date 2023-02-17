@@ -6,4 +6,4 @@
 3. docker-compose up -d
 4. docker exec -it linksshortener_myapp_1 /bin/sh -> php artisan key:generate -> php artisan migrate
 5. localhost:8000
-
+1
